@@ -36,34 +36,17 @@ Hecho esto, Deberia aparecer una pagian de este estilo
 
 ![image](https://github.com/JordyBautista10/AREP-Taller-1/assets/123812969/0b4a4017-a921-4c0a-9842-bcb1d93fd39a)
 
+Únicamente lo que resta es colocar el nombre de la película que se desea buscar, para el siguiente ejemplo se buscara la información de la película, avatar, así qué una vez puesto el nombre de la película se da clic en el botón de Submit
 
+![image](https://github.com/JordyBautista10/AREP-Taller-1/assets/123812969/cfd735ef-8d29-4c4d-8208-ae8f45122abf)
 
 ### Prerequisitos
 
-Para que el codigo corra de forma satisfactoria se necesitara de:
+Para que el código corra de forma satisfactoria y se puedan seguir todos los pasos se necesitara de: Java, Maven y Git; sin embargo,  para la descarga e instalación de estos elementos, adjunto los link de material de apoyo de otros autores
 
-```
-Give examples
-```
-
-### Installing
-
-A step by step series of examples that tell you how to get a development env running
-
-Say what the step will be
-
-```
-Give the example
-```
-
-And repeat
-
-```
-until finished
-```
-
-End with an example of getting some data out of the system or using it for a little demo
-
+* [Tutorial instalación Java] (https://youtu.be/4WKo13f2Qpc?si=lHG84Jp_k7YbBFmp)
+* [Tutorial instalación Git] (https://youtu.be/jpTrSSjPlEo?si=VdcaXSaNEFkR3hCk)
+* [Tutorial instalación Maven] (https://youtu.be/biBOXvSNaXg?si=wfySIfBTUERGEVZC)
 
 ## Built With
 

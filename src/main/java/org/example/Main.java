@@ -154,12 +154,29 @@ public class Main {
                 + "<!DOCTYPE html>"
                 + "<html>\n"
                 + "    <head>\n"
-                + "        <title>Busca la informacion de tu pelicula Favorita</title>\n"
+                + "        <title>MoviesSearch</title>\n"
                 + "        <meta charset=\"UTF-8\">\n"
                 + "        <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n"
+                + "     <style>\n" +
+                    "        h1 {\n" +
+                    "            text-align: center;\n" +
+                    "        }\n" +
+                    "        form {\n" +
+                    "            text-align: center;\n" +
+                    "        }\n" +
+                    "        input[type=\"text\"] {\n" +
+                    "            display: inline-block;\n" +
+                    "            width: 300px;\n" +
+                    "            margin: 10px auto;\n" +
+                    "        }\n" +
+                    "        input[type=\"button\"] {\n" +
+                    "            display: inline-block;\n" +
+                    "            margin: 10px auto;\n" +
+                    "        }\n" +
+                    "    </style>"
                 + "    </head>\n"
                 + "    <body>\n"
-                + "        <h1>Form with GET</h1>\n"
+                + "        <h1>Busca información de tu película favorita</h1>\n"
                 + "        <form action=\"/Busqueda\">\n"
                 + "            <label for=\"name\">Name:</label><br>\n"
                 + "            <input type=\"text\" id=\"name\" name=\"t\" value=\"John\"><br><br>\n"

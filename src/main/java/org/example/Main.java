@@ -13,7 +13,7 @@ public class Main {
 
     /**
      * Constructor
-     * @param args
+     * @param args por defecto
      * @throws IOException Esta clase es la clase general de excepciones producidas por operaciones de E/S fallidas o interrumpidas.
      */
     public static void main(String[] args) throws IOException {
@@ -99,7 +99,7 @@ public class Main {
      * @throws IOException Esta clase es la clase general de excepciones producidas por operaciones de E/S
      * fallidas o interrumpidas.
      */
-     public static String makeRequest(String url) throws IOException {
+    public static String makeRequest(String url) throws IOException {
 
         URL obj = new URL(url);
         HttpURLConnection con = (HttpURLConnection) obj.openConnection();
@@ -108,7 +108,7 @@ public class Main {
         //The following invocation perform the connection implicitly before getting the code
         int responseCode = con.getResponseCode();
         StringBuffer response = new StringBuffer();
-         // Encabezado necesario en todas las peticiones
+        // Encabezado necesario en todas las peticiones
         response.append("HTTP/1.1 200 OK\r\n" + "Content-Type:application/json\r\n" + "\r\n");
         System.out.println("GET Response Code :: " + responseCode);
 
@@ -164,22 +164,22 @@ public class Main {
                 + "        <meta charset=\"UTF-8\">\n"
                 + "        <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n"
                 + "     <style>\n" +
-                    "        h1 {\n" +
-                    "            text-align: center;\n" +
-                    "        }\n" +
-                    "        form {\n" +
-                    "            text-align: center;\n" +
-                    "        }\n" +
-                    "        input[type=\"text\"] {\n" +
-                    "            display: inline-block;\n" +
-                    "            width: 300px;\n" +
-                    "            margin: 10px auto;\n" +
-                    "        }\n" +
-                    "        input[type=\"button\"] {\n" +
-                    "            display: inline-block;\n" +
-                    "            margin: 10px auto;\n" +
-                    "        }\n" +
-                    "    </style>"
+                "        h1 {\n" +
+                "            text-align: center;\n" +
+                "        }\n" +
+                "        form {\n" +
+                "            text-align: center;\n" +
+                "        }\n" +
+                "        input[type=\"text\"] {\n" +
+                "            display: inline-block;\n" +
+                "            width: 300px;\n" +
+                "            margin: 10px auto;\n" +
+                "        }\n" +
+                "        input[type=\"button\"] {\n" +
+                "            display: inline-block;\n" +
+                "            margin: 10px auto;\n" +
+                "        }\n" +
+                "    </style>"
                 + "    </head>\n"
                 + "    <body>\n"
                 + "        <h1>Busca información de tu película favorita</h1>\n"
@@ -212,7 +212,7 @@ public class Main {
                 + "                    htmlContent += \"<b> Language: </b>\" + jsonResponse.Language + \"<br>\";"
                 + "                    htmlContent += \"<b> Country: </b>\" + jsonResponse.Country + \"<br>\";"
                 + "                    htmlContent += \"<b> Awards: </b>\" + jsonResponse.Awards + \"<br>\";"
-                                        // Lista
+                // Lista
                 + "                    htmlContent += '<b> Ratings: </b>' + formatRanking(jsonResponse.Ratings) + '<br>';"
                 + "                    htmlContent += \"<b> Metascore: </b>\" + jsonResponse.Metascore + \"<br>\";"
                 + "                    htmlContent += \"<b> imdbRating: </b>\" + jsonResponse.imdbRating + \"<br>\";"
@@ -225,7 +225,7 @@ public class Main {
                 + "                    htmlContent += \"<b> Production: </b>\" + jsonResponse.Production + \"<br>\";"
                 + "                    htmlContent += \"<b> Website: </b>\" + jsonResponse.Website + \"<br>\";"
                 + "                    htmlContent += \"<b> Response: </b>\" + jsonResponse.Response + \"<br>\";"
-                            // Cartel de la pelicula
+                // Cartel de la pelicula
                 + "                    htmlContent += \"<b> Poster: </b>\" + \"<img src=\" + jsonResponse.Poster + \"> <br>\";"
                 + "                    htmlContent += \"<b> Info: </b>\"  +  JSON.stringify(jsonResponse) + \"<br>\";"
 
@@ -236,19 +236,19 @@ public class Main {
                 + "                xhttp.send();\n"
                 + "            }\n"
                 + "     function formatRanking(ranking) {\n" +
-                    "        let html = '<table border=\"1\">';\n" +
-                    "        html += '<tr><th>Source</th><th>Value</th></tr>';\n" +
-                    "\n" +
-                    "        for (let i = 0; i < ranking.length; i++) {\n" +
-                    "            html += '<tr>';\n" +
-                    "            html += '<td>' + ranking[i].Source + '</td>';\n" +
-                    "            html += '<td>' + ranking[i].Value + '</td>';\n" +
-                    "            html += '</tr>';\n" +
-                    "        }\n" +
-                    "\n" +
-                    "        html += '</table>';\n" +
-                    "        return html;\n" +
-                    "    }"
+                "        let html = '<table border=\"1\">';\n" +
+                "        html += '<tr><th>Source</th><th>Value</th></tr>';\n" +
+                "\n" +
+                "        for (let i = 0; i < ranking.length; i++) {\n" +
+                "            html += '<tr>';\n" +
+                "            html += '<td>' + ranking[i].Source + '</td>';\n" +
+                "            html += '<td>' + ranking[i].Value + '</td>';\n" +
+                "            html += '</tr>';\n" +
+                "        }\n" +
+                "\n" +
+                "        html += '</table>';\n" +
+                "        return html;\n" +
+                "    }"
                 + "        </script>\n"
                 + "\n"
                 + "    </body>\n"

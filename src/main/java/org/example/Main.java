@@ -9,11 +9,10 @@ import java.util.HashMap;
  */
 public class Main {
 
-    private static HashMap<String, String> cache = new HashMap<String, String>();
+    private static HashMap<String, String> cache = new HashMap<String, String>();   // Key: Movie name and Value: Info about the movie
 
     public static void main(String[] args) throws IOException {
         ServerSocket serverSocket = null;
-
 
         try {
             serverSocket = new ServerSocket(35000);

@@ -11,6 +11,11 @@ public class Main {
 
     private static HashMap<String, String> cache = new HashMap<String, String>();   // Key: Movie name and Value: Info about the movie
 
+    /**
+     * Constructor
+     * @param args
+     * @throws IOException Esta clase es la clase general de excepciones producidas por operaciones de E/S fallidas o interrumpidas.
+     */
     public static void main(String[] args) throws IOException {
         ServerSocket serverSocket = null;
 
@@ -72,7 +77,7 @@ public class Main {
      * la informacion relacionada con esa pelicula
      * @param uriStr: url de la peticion que recibe el servidor
      * @return Informacion de la pelucula
-     * @throws IOException
+     * @throws IOException Esta clase es la clase general de excepciones producidas por operaciones de E/S fallidas o interrumpidas.
      */
     public static String cacheSearch(String uriStr) throws IOException {
         String nameMovie = uriStr.substring(12).toLowerCase();          // de la Uri Obtiene el nombre de la pelicula
@@ -91,7 +96,8 @@ public class Main {
      * Este metodo realiza una petición get a la URL que se le proporcione y retorna la respuesta
      * @param url: Es la URL de la pagina a la cual se le desea realizar la petición
      * @return Es la respuesta de la peticion realizada en formato de String
-     * @throws IOException
+     * @throws IOException Esta clase es la clase general de excepciones producidas por operaciones de E/S
+     * fallidas o interrumpidas.
      */
      public static String makeRequest(String url) throws IOException {
 
@@ -127,7 +133,8 @@ public class Main {
     }
 
     /**
-     * Retorna una pagian vacia de HTML en caso de no consultar la URL apropiada
+     * Este metodo retorna una pagian vacia de HTML en caso de no consultar la URL apropiada
+     * @return String de una pagina web vacia
      */
     public static String httpError() {
         return "HTTP/1.1 400 Not found\r\n" //encabezado necesario
@@ -143,9 +150,8 @@ public class Main {
     }
 
     /**
-     *
-     * @return Retorna una pagina de HTML con la cual se pueden realizar busquedas de peliculas y la informacion
-     * relacionada a esta
+     * Este metodo retorna una pagina de HTML con la cual se pueden realizar busquedas de peliculas y la informacion
+     * @return String de una pagina web de busqueda
      */
     public static String httpClientHtml() {
         return "HTTP/1.1 200 OK\r\n" //encabezado necesario

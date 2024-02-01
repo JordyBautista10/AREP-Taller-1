@@ -38,6 +38,10 @@ Hecho esto, Deberia aparecer una pagian de este estilo
 
 Únicamente lo que resta es colocar el nombre de la película que se desea buscar, para el siguiente ejemplo se buscara la información de la película, avatar, así qué una vez puesto el nombre de la película se da clic en el botón de Submit
 
+![image](https://github.com/JordyBautista10/AREP-Taller-1/assets/123812969/846b58ce-45de-492c-8e2b-3b16013bc6ec)
+
+Este deberia ser el resultado
+
 ![image](https://github.com/JordyBautista10/AREP-Taller-1/assets/123812969/cfd735ef-8d29-4c4d-8208-ae8f45122abf)
 
 ### Prerequisitos
